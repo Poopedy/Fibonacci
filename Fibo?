@@ -1,0 +1,22 @@
+def find_Fibo(n):
+    fib = [0,1]
+    if n == 2:
+        print(str(fib))
+    else:
+        
+    
+        while n != 1000:
+            for nth in range(1,n-1):
+                num = fib[nth-1]+fib[nth]
+                fib.append(num)
+
+            return str(fib)
+        
+        
+def main():  # Wrapper function
+
+    print(find_Fibo(int(input('How many numbers do you need? '))))
+
+if __name__ == '__main__':
+    main()
+            
