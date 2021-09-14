@@ -1,0 +1,27 @@
+def p_f(n):
+    
+    def p(x):
+        
+        hold = []
+        for xth in range(1,x+1):
+            if x % xth == 0:
+                hold.append(xth)
+        if len(hold) == 2:
+            return True
+        
+    another = []
+    
+    for nth in range(1,n+1):
+        if n % nth == 0 and p(nth):
+            another.append(nth)
+            
+    print(another)
+    
+    
+def main():  # Wrapper function
+
+    print(p_f(int(input('Number? '))))
+
+if __name__ == '__main__':
+    main()
+   
